@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-capable" content="yes">
+    <title>chen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/font.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <script src="js/webrtc.js"></script>
+    <script src="js/jquery.js"></script>
+    <style media="print">
+        @page {
+            size: A4;
+            margin: 0mm;
+        }
+
+        body,
+        .print {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <video src="./mv/print/clickPrint.mp4" autoplay class="print" onended="printed()" id="print"></video>
+    <script src='http://192.168.1.58:8000/CLodopfuncs.js'></script>
+    <script src='http://192.168.1.58:18000/CLodopfuncs.js'></script>
+    <script>
+        function printed() {
+            document.onkeydown = function (event) {
+                var e = event || window.event || arguments.callee.caller.arguments[0];
+                if (e && e.keyCode == 13) { // enter 键
+                    window.location.href = 'printing.html'
+                }
+            };
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background: #f0f0f0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    width:200%;
+    height: 100%;
+    background: url("../images/bg.jpg") no-repeat;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 2;
+}
+
+#container {
+    /* display: none; */
+    position: absolute;
+    left: -800px;
+    top: -600px;
+    z-index: -9999;
+}
+
+#player {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    position: relative;
+}
+
+.videoBox {
+    display: none;
+}
+
+audio {
+    width: 100%;
+   
+}
+
+.timeText {
+    vertical-align: text-bottom;
+    font-size: 24px;
+}
+
+.spanBox {
+    float: right;
+    vertical-align: middle;
+}
+
+.time {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.birth {
+    background: #d95450;
+    /* background:skyblue; */
+}
+
+.demo {
+    /* display: none; */
+    /* max-width: 600px;
+    height: 750px; */
+    /* margin: 0 auto; */
+    /* width:500px;
+    height: 600px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -8;
+    border: 1px solid #999;
+}
+
+.img-l {
+    width: 400px;
+    left: 38px;
+    bottom: 78px;
+    z-index: 2;
+    /* height: 200px; */
+    position: absolute;
+}
+
+.img-r {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#controller {
+    display: none;
+}
